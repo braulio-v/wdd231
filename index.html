@@ -3,13 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello world</title>
+    <title>Document</title>
+    <meta name="description" content="chamber of commerce website ">
+    <meta name="author" content="Braulio Villa">
+    <!--Style sheets here-->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <h1>Hello guys </h1>
-    <button>please enter</button>
+    <header>
+        <img src="images/ingles.svg" alt="Site Logo" width="512" height="512">
+        <span>Braulio's Site Title</span>
+        <button id="nav-button" class="hamburger"></button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main class="grid-layout">
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About me</h2>
+            <p>My name is Braulio Villa. I'm from Ecuador and live with my family in Guayaquil. I'm currently studying web development
+            at BYU Idaho and am very excited to learn more about programming. I already know HTML, CSS, and a little JavaScript, and
+            I enjoy learning new things that help me grow.</p>
+        </section>
+        <section class="me">
+            <h2>Student Photo</h2>
+            <img src="images/20250307_192955.jpg" alt="Braulio Villa">
+        </section>
+        <section class="certificate">
+            <h2>Wed Certificate Courses</h2>
+            <button id="all" class="allC">All</button>
+            <button id="cse" class="cse">CSE</button>
+            <button id="wdd" class="wdd">WDD</button>
+            <p>The total credits for course listed below is <span id="total"></span></p>
+            <div id="list" class="courses"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/braulio.villa.589" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+        </div>
+        <p class="p1">©<span id="currentyear"></span>. Braulio Villa . Guayaquil - Ecuador</p>
+        <p class="p2">Last Modified:<span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
