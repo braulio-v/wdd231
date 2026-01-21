@@ -13,10 +13,14 @@ getProphetData();
 
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
-        let card = document.createElement('sections');
+        let card = document.createElement('section');
         let fullName = document.createElement('h2');
         let portrait = document.createElement('img');
-        let date = 
+        let date = document.createElement('p');
+        let place = document.createElement('p');
+        place.textContent = `Place of Birth: ${prophet.birthplace}`;
+        date.textContent = `Date of Birth: ${prophet.birthdate}`;
+        
 
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
 
@@ -28,11 +32,9 @@ const displayProphets = (prophets) => {
 
         //append the section to the card with the created elements
         card.appendChild(fullName);
+        card.appendChild(date);
+        card.appendChild(place);
         card.appendChild(portrait);
-
         cards.appendChild(card);
     });
 }
-
-birthdate
-birthplace
