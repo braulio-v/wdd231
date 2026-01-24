@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory-Chamber of Commerce</title>
+    <meta name="description"
+        content="The Guayaquil Chamber of Commerce promotes local businesses through networking, advocacy, events, and resources that support economic growth.">
+    <meta name="author" content="Braulio Villa">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/directory.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Guayaquil Chamber of Commerce">
+    <meta property="og:description"
+        content="The Guayaquil Chamber of Commerce promotes local businesses, economic growth, and community development through resources, events, and partnerships.">
+    <meta property="og:image"
+        content="https://www.eluniverso.com/resizer/v2/76EQ2U6ISNCBFBSMRNTQBQDHTA.jpg?auth=9ca1ace7656e0f2258aa7c0d1c3918f0af42dcf0a4bc03098049e116b2d7d839&width=800&height=844&quality=75&smart=true">
+    <meta property="og:url" content="https://braulio-v.github.io/wdd231">
+</head>
+<body>
+    <header>
+        <img src="images/buildings.svg" alt="Site Logo" width="512" height="512">
+        <span>Guayaquil Chamber of commerce</span>
+        <button id="nav-button" class="hamburger"></button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Welcome to Guayaquil</h1>
+            <p>
+                Supporting local businesses and strengthening the economic future
+                of Ecuador’s commercial capital.
+            </p>
+            <img src="images/guayaquil.jpg" alt="">
+            <a href="#" class="btn">Join The Chamber</a>
+        </div>
+    </section>
+    <div class="menu">
+        <h1 class="h1">Business Directory</h1>
+        <button id="grid">▦</button>
+        <button id="list">⇶</button>
+    </div>
+    <div id="members-container" class="list">
+    </div>
+    <footer>
+        <div>
+            <h4>Guayaquil Chamber of Commerce</h4>
+            <p>Av. Cisne 2, Guayaquil</p>
+            <p>+593 991650311</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/braulio.villa.589" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="Github" width="16"
+                    height="16"></a>
+            <a href="www.linkedin.com/in/braulio-villa" target="_blank"><img src="images/linkedin.svg" alt="Linkedin"
+                    width="16" height="16"></a>
+            <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16"
+                    height="16"></a>
+        </div>
+        <div>
+            <p class="p1">©<span id="currentyear"></span>. Braulio Villa</p>
+            <p> Guayaquil - Ecuador</p>
+            <p class="p2">Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>  
+</body>
+</html>

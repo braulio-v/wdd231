@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Banco de Guayaquil",
+            "address": "Av. 9 de Octubre 1600, Guayaquil, Ecuador",
+            "phone": "+593 4 373 0100",
+            "website": "https://www.bancoguayaquil.com",
+            "image": "banco-guayaquil.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Cervecería Nacional",
+            "address": "Km 4.5 Vía a Daule, Guayaquil, Ecuador",
+            "phone": "+593 4 259 8000",
+            "website": "https://www.cervecerianacional.ec",
+            "image": "cerveceria-nacional.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name": "AMCHAM Guayaquil",
+            "address": "World Trade Center, Torre A, Guayaquil, Ecuador",
+            "phone": "+593 4 263 7100",
+            "website": "https://www.amchamgye.org.ec",
+            "image": "amcham-guayaquil.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Malecón 2000 Café & Market",
+            "address": "Malecón Simón Bolívar, Guayaquil, Ecuador",
+            "phone": "+593 4 251 3000",
+            "website": "https://www.malecon2000.org.ec",
+            "image": "malecon-cafe.jpg",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Las Peñas Art Gallery & Boutique",
+            "address": "Calle Numa Pompilio Llona, Guayaquil, Ecuador",
+            "phone": "+593 4 229 4500",
+            "website": "https://www.laspenasarte.com",
+            "image": "las-penas-gallery.jpg",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Guayaquil Tech Hub",
+            "address": "Av. Francisco de Orellana, Guayaquil, Ecuador",
+            "phone": "+593 4 390 2200",
+            "website": "https://www.guayaquiltechhub.ec",
+            "image": "tech-hub.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Puerto Mar Logistics",
+            "address": "Zona Portuaria Sur, Guayaquil, Ecuador",
+            "phone": "+593 4 275 8800",
+            "website": "https://www.puertomarlogistics.ec",
+            "image": "puerto-mar.jpg",
+            "membershipLevel": 2
+        }
+    ]
+}
