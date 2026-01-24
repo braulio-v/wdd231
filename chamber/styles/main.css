@@ -9,7 +9,7 @@ deep twilight blue : #21085D   */
     /* Gris medio */
     --light-gray: #F4F6F8;
     /* Fondo */
-    --dark-gray: #212529;
+    --dark-gray: #21085D;
     /* Texto */
 }
 
@@ -206,6 +206,11 @@ footer p {
 
 /* Directory */
 
+.h2 {
+    font-size: 30px;
+    background-color: var(--secondary-color);
+    color: var(--dark-gray);
+}
 .menu {
     background-color: var(--secondary-color);
     margin-bottom: 1em;
