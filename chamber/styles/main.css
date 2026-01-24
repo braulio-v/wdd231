@@ -206,11 +206,12 @@ footer p {
 
 /* Directory */
 
-.h2 {
+.pd {
     font-size: 30px;
     background-color: var(--secondary-color);
     color: var(--dark-gray);
 }
+
 .menu {
     background-color: var(--secondary-color);
     margin-bottom: 1em;
