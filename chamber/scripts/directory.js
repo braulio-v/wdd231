@@ -8,7 +8,7 @@ navButton.addEventListener('click', () => {
 
 // fetching data from json
 
-const linkJs = 'members.json';
+const linkJs = 'data/members.json';
 
 const cards = document.querySelector("#members-container");
 
