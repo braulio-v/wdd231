@@ -25,4 +25,11 @@
         gap: 2rem;
         padding-left: 0;
     }
+
+}
+
+@media only screen and (max-width: 38rem) {
+    footer{
+            display: grid;
+        }
 }

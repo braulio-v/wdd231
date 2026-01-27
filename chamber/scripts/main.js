@@ -17,11 +17,79 @@ const weatherData = {
     humidity: 70
 };
 
-weatherElement.textContent = `
-  ${weatherData.city}: ${weatherData.temperature}°C,
-  ${weatherData.condition},
-  Humidity: ${weatherData.humidity}% 
-`;
+const p1 = document.createElement('p');
+const p2 = document.createElement('p');
+const p3 = document.createElement('p');
+
+p1.textContent = `${weatherData.city}: ${weatherData.temperature}°C`;
+p2.textContent = `${weatherData.condition}`;
+p3.textContent = `Humidity: ${ weatherData.humidity }% `
+  
+weatherElement.appendChild(p1);
+weatherElement.appendChild(p2);
+weatherElement.appendChild(p3);
+
+const spotlight = [
+  {
+    name: "Cervecería Nacional",
+    tagline: "Leading beverage company supporting local communities",
+    email: "cerveceria@gmail.com",
+    phone: "+593 4 259 8000",
+    website: "https://www.cervecerianacional.ec",
+    image: "cerveceria-nacional.jpg"
+  },
+  {
+    name: "AMCHAM Guayaquil",
+    tagline: "Promoting trade and investment between Ecuador and the U.S.",
+    email: "amchan@gmail.com",
+    phone: "+593 4 263 7100",
+    website: "https://www.amchamgye.org.ec",
+    image: "amcham-guayaquil.jpg"
+  },
+  {
+    name: "Malecón 2000 Café & Market",
+    tagline: "Local café offering food and products by the riverfront",
+    email: "maleconcafe@gmail.com",
+    phone: "+593 4 251 3000",
+    website: "https://www.malecon2000.org.ec",
+    image: "malecon-cafe.jpg"
+  },
+];
+
+const spotsection = document.querySelector('#spotlight');
+
+spotlight.forEach(business => {
+  const spotlightc = document.createElement('section');
+
+  const p4 = document.createElement('h4');
+  const p5 = document.createElement('p');
+  const p6 = document.createElement('p');
+  const p7 = document.createElement('p');
+  const p8 = document.createElement('p');
+  const img1 = document.createElement('img');
+  p5.classList.toggle('p5');
+
+  p4.textContent = business.name;
+  p5.textContent = business.tagline;
+  p6.innerHTML = `<strong>EMAIL:</strong> ${business.email}`;
+  p7.innerHTML = `<strong>PHONE:</strong> ${business.phone}`;
+  p8.innerHTML = `<strong>EMAIL:</strong> ${business.website}`;
+
+  img1.setAttribute('src', `images/${business.image}`);
+  img1.setAttribute('alt', `Image of ${business.name}`);
+  img1.setAttribute('loading', 'lazy');
+  img1.setAttribute('width', '150');
+  img1.setAttribute('height', '150');
+
+  spotlightc.appendChild(p4);
+  spotlightc.appendChild(p5);
+  spotlightc.appendChild(img1);
+  spotlightc.appendChild(p6);
+  spotlightc.appendChild(p7);
+  spotlightc.appendChild(p8);
+
+  spotsection.appendChild(spotlightc);
+});
 
 const currentYear = new Date().getFullYear();
 document.getElementById('currentyear').textContent = currentYear;
