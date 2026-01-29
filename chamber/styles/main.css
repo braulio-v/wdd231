@@ -148,6 +148,7 @@ h1 {
 .grid-layout {
     display: grid;
     grid-template-columns: 35rem 20rem auto;
+    grid-template-rows: 2.5rem 1fr;
     column-gap: 5px;
     margin-bottom: 15px;
 }
@@ -162,8 +163,14 @@ h1 {
     padding: 5px;
 }
 
+.community {
+    grid-column: 1/2;
+}
 .h1 {
-    grid-column: 1/4;
+    all: unset;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: roboto;
 }
 
 h2 {
