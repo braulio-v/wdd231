@@ -58,7 +58,14 @@ const spotlight = [
 
 const spotsection = document.querySelector('#spotlight');
 
-spotlight.forEach(business => {
+function getRandomBusinesses(array, number) {
+  const shuffled = array.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, number);
+}
+
+const randomSpotlights = getRandomBusinesses(spotlight, 3);
+
+randomSpotlights.forEach(business => {
   const spotlightc = document.createElement('section');
 
   const p4 = document.createElement('h4');
@@ -67,19 +74,18 @@ spotlight.forEach(business => {
   const p7 = document.createElement('p');
   const p8 = document.createElement('p');
   const img1 = document.createElement('img');
-  p5.classList.toggle('p5');
 
   p4.textContent = business.name;
   p5.textContent = business.tagline;
   p6.innerHTML = `<strong>EMAIL:</strong> ${business.email}`;
   p7.innerHTML = `<strong>PHONE:</strong> ${business.phone}`;
-  p8.innerHTML = `<strong>EMAIL:</strong> ${business.website}`;
+  p8.innerHTML = `<strong>WEBSITE:</strong> ${business.website}`;
 
-  img1.setAttribute('src', `images/${business.image}`);
-  img1.setAttribute('alt', `Image of ${business.name}`);
-  img1.setAttribute('loading', 'lazy');
-  img1.setAttribute('width', '150');
-  img1.setAttribute('height', '150');
+  img1.src = `images/${business.image}`;
+  img1.alt = `Image of ${business.name}`;
+  img1.loading = 'lazy';
+  img1.width = 150;
+  img1.height = 150;
 
   spotlightc.appendChild(p4);
   spotlightc.appendChild(p5);
@@ -90,6 +96,7 @@ spotlight.forEach(business => {
 
   spotsection.appendChild(spotlightc);
 });
+
 
 const currentYear = new Date().getFullYear();
 document.getElementById('currentyear').textContent = currentYear;
