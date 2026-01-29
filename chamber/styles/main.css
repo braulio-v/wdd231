@@ -218,15 +218,18 @@ h2 {
     background-color: var(--primary-color);
     color: var(--light-gray);
     border-radius: 20px;
-}
-
-.business h4 {
-    color: goldenrod;
     padding: 5px;
 }
 
+.business h4 {
+    color: var(--light-gray);
+    padding: 5px;
+    font-family: roboto;
+    font-size: 20px;
+}
+
 .business section strong{
-    color: goldenrod;
+    color: var(--neutral-gray);
 }
 
 .p5 {
