@@ -26,6 +26,20 @@
         padding-left: 0;
     }
 
+    /* join*/
+    .form-cards-div {
+        grid-template-columns: 1fr 1fr;
+    }
+    #dialog-box {
+        margin-top: 15rem;
+        margin-left: 29rem;
+    }
+    form {
+        margin-left: 5rem;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
 }
 
 @media only screen and (max-width: 38rem) {

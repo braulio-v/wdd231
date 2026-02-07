@@ -11,7 +11,7 @@ function displayMembershipLevels(levels) {
     levels.forEach((level) => {
         let card = document.createElement('section');
         let title = document.createElement('h3');
-        let benefitButton = document.createElement('button');
+        let button = document.createElement('button');
         card.setAttribute('class', 'mCard');
         if (level.memberLevel === "np") {
             card.setAttribute('id', 'np')
@@ -26,10 +26,10 @@ function displayMembershipLevels(levels) {
             card.setAttribute('id', 'gold')
         }
         title.innerHTML = `${level.title}`;
-        benefitButton.innerHTML = 'Learn More';
-        benefitButton.addEventListener('click', () => showStuff(level));
+        button.innerHTML = 'Learn More';
+        button.addEventListener('click', () => showStuff(level));
         card.appendChild(title);
-        card.appendChild(benefitButton);
+        card.appendChild(button);
         levelsSection.appendChild(card);
 
     });

@@ -381,7 +381,6 @@ footer p {
 }
 
 form {
-    margin: 1rem 5rem;
     background-color: var(--light-gray);
     padding: 10px;
     border-radius: 25px;
@@ -501,7 +500,6 @@ form legend {
 /* */
 .form-cards-div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .level-cards {
@@ -509,55 +507,48 @@ form legend {
 }
 
 .mCard {
-    background-color: var(--section-bg);
-    color: var(--white-text);
-    border: 1px solid darkgray;
+    background-color: var();
+    border: 1px solid var(--primary-color);
     border-radius: 10px;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 #dialog-box {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-    margin-top: 15rem;
-    margin-left: 29rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 60%);
+    display: grid;
 }
 
 #dialog-box.np::backdrop {
-    background-color: rgb(135 206 235 / 50%);
-    /* border-top-right-radius: 10px; */
+    background-color: rgba(143, 139, 139, 0.5);
 }
 
 #dialog-box.bronze::backdrop {
-    background-color: rgb(205 127 50 / 50%);
+    background-color: rgba(151, 81, 10, 0.5);
 }
 
 #dialog-box.silver::backdrop {
-    background-color: rgb(192 192 192/ 50%);
+    background-color: rgba(134, 130, 130, 0.5);
 }
 
 #dialog-box.gold::backdrop {
-    background-color: rgb(212 175 55 / 50%);
+    background-color: rgba(205, 189, 22, 0.5);
 }
 
 .level-cards h2 {
     font-size: 1.7rem;
-    color: #a25844;
+    color: var(--light-gray);
     margin: 1.5rem 0 .2rem 0;
-    border-bottom: 1px solid #eee;
+    border-radius: 5px;
 }
 
 .mCard h3 {
     text-align: center;
     padding: 0.5rem 0;
-    border-bottom: 1px solid white;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-bottom: 1px;
 }
 
-#dialog-box h2 {
-    padding: 0.3rem 0 0 0.3rem;
-}
 
 #dialog-box div {
     padding: 0.5rem;
@@ -586,7 +577,6 @@ form legend {
     height: 44px;
     border-radius: 20px;
     cursor: pointer;
-    margin-left: 50%;
-    transform: translate(-50%, 0);
+    margin-left: 35%;
     margin-bottom: 0.5rem;
 }
