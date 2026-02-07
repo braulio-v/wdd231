@@ -371,3 +371,222 @@ footer p {
     background-color: var(--primary-color);
     color: var(--light-gray);
 }
+
+
+/*Join page */ 
+
+.activeJoin {
+    font-weight: bold;
+    border-bottom: 3px solid #ddd;
+}
+
+form {
+    margin: 1rem 5rem;
+    background-color: var(--light-gray);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+form h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 0.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+label {
+    display: block;
+    padding-top: 0.1rem;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: 0.3rem;
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    border-left-width: 7px;
+    border-left-color: var(--primary-color);
+    font-size: 1rem;
+    width: 300px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+form textarea {
+    display: block;
+    margin: 0.1rem 0 1rem 0;
+    height: 3rem;
+    width: 320px;
+}
+
+input:required {
+    border-left-color: red;
+}
+
+input:required:valid {
+    border-left-color: green;
+}
+
+input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 3.2rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: skyblue;
+    color: var(--primary-color);
+    border: 1px solid var(--dark-gray);
+}
+
+form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0.1rem 0 1rem 0;
+}
+
+form legend {
+    font-size: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+
+
+
+/* Thank you Page */ 
+
+.thanks {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 10px;
+    background: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 2rem;
+    margin-bottom: 8rem;
+    margin-left: 15rem;
+    max-width: 600px;
+}
+
+.thanks legend {
+    font-size: 1.3rem;
+    margin: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.thanks H1 {
+    font-size: 1.5rem;
+    font-family: roboto;
+}
+
+#join-timestamp {
+    font-size: 1rem;
+}
+
+
+/* */
+.form-cards-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.level-cards {
+    margin-right: 5rem;
+}
+
+.mCard {
+    background-color: var(--section-bg);
+    color: var(--white-text);
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+
+#dialog-box {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    margin-top: 15rem;
+    margin-left: 29rem;
+}
+
+#dialog-box.np::backdrop {
+    background-color: rgb(135 206 235 / 50%);
+    /* border-top-right-radius: 10px; */
+}
+
+#dialog-box.bronze::backdrop {
+    background-color: rgb(205 127 50 / 50%);
+}
+
+#dialog-box.silver::backdrop {
+    background-color: rgb(192 192 192/ 50%);
+}
+
+#dialog-box.gold::backdrop {
+    background-color: rgb(212 175 55 / 50%);
+}
+
+.level-cards h2 {
+    font-size: 1.7rem;
+    color: #a25844;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.mCard h3 {
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#dialog-box h2 {
+    padding: 0.3rem 0 0 0.3rem;
+}
+
+#dialog-box div {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+#dialog-box ul {
+    margin-left: 1rem;
+}
+
+#dialog-box p:nth-of-type(2) {
+    padding-top: 0.5rem;
+}
+
+.mCard button {
+    display: block;
+    width: 120px;
+    height: 44px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px auto 5px auto;
+}
+
+#dialog-box button {
+    width: 120px;
+    height: 44px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 0.5rem;
+}

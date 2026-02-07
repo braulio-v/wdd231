@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Chamber of Commerce</title>
+    <title>Document</title>
     <meta name="description"
         content="The Guayaquil Chamber of Commerce promotes local businesses through networking, advocacy, events, and resources that support economic growth.">
     <meta name="author" content="Braulio Villa">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -18,8 +18,7 @@
     <meta property="og:title" content="Guayaquil Chamber of Commerce">
     <meta property="og:description"
         content="The Guayaquil Chamber of Commerce promotes local businesses, economic growth, and community development through resources, events, and partnerships.">
-    <meta property="og:image"
-        content="https://braulio-v.github.io/wdd231/chamber/images/guayaquil.jpg">
+    <meta property="og:image" content="https://braulio-v.github.io/wdd231/chamber/images/guayaquil.jpg">
     <meta property="og:url" content="https://braulio-v.github.io/wdd231">
 </head>
 <body>
@@ -30,54 +29,26 @@
     </header>
     <nav>
         <ul class="navigation">
-            <li><a href="index.html" class="activeHome">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <h1>Welcome to Guayaquil</h1>
-            <p>
-                Supporting local businesses since 1985.
-            </p>
-            <img src="images/guayaquil.jpg" alt="Guayaquil city">
-            <a href="#" class="btn">Join The Chamber</a>
-        </div>
-    </section>
-    <main class="grid-layout">
-        <h2 class="h1">Home</h2>
-        <!-- Community Info -->
-        <section class="community">
-            <h2>About Our Community</h2>
-            <p>
-                Guayaquil is the largest city and economic capital of Ecuador,
-                located along the Guayas River near the Pacific Ocean. As the
-                country’s main port and commercial hub, Guayaquil plays a vital role
-                in trade, industry, and entrepreneurship.
-            </p>
-        </section>
-        <!-- Weather Section -->
-        <section class="weather">
-            <h2>Current Weather in Guayaquil</h2>
-            <img src="images/wether.png" alt="">
-            <p id="weather"></p>
-        </section>
-        <section class="forecast">
-            <h2>Weather Forecast</h2>
-            <p>Today: <strong>90F</strong></p>
-            <p>Wednesday: <strong>89F</strong></p>
-            <p>Thursday: <strong>68F</strong></p>
-        </section>
+    <main>
+        <fieldset class="thanks">
+            <legend>Thank you for joining us</legend>
+            <h1>Below are your membership details</h1>
+            <div id="results"></div>
+            <h3>Thank you for joining</h3>
+            <p id=join-timestamp></p>
+        </fieldset>
     </main>
-    <div id="spotlight" class="business"></div>
     <footer>
         <div>
             <h3>Guayaquil Chamber of Commerce</h3>
             <p>Av. Cisne 2, Guayaquil</p>
-            <p>+593 991650311</p> 
+            <p>+593 991650311</p>
         </div>
         <div class="social">
             <a href="https://www.facebook.com/braulio.villa.589" target="_blank"><img src="images/facebook.svg"

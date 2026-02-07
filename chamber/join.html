@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Page</title>
+    <meta name="description"
+        content="The Guayaquil Chamber of Commerce promotes local businesses through networking, advocacy, events, and resources that support economic growth.">
+    <meta name="author" content="Braulio Villa">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/join.js" defer></script>
+    <script type="module" src="scripts/membershipC.mjs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Guayaquil Chamber of Commerce">
+    <meta property="og:description"
+        content="The Guayaquil Chamber of Commerce promotes local businesses, economic growth, and community development through resources, events, and partnerships.">
+    <meta property="og:image" content="https://braulio-v.github.io/wdd231/chamber/images/guayaquil.jpg">
+    <meta property="og:url" content="https://braulio-v.github.io/wdd231">
+</head>
+<body>
+    <header>
+        <img src="images/buildings.svg" alt="Site Logo" width="512" height="512">
+        <span>Guayaquil Chamber of commerce</span>
+        <button id="nav-button" class="hamburger"></button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="activeJoin">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-cards-div">
+        <div class="form-div">
+            <form method="GET" action="thankyou.html" class="designOne">
+                <h1>Membership Form</h1>
+                <label>First Name *<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name *<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Organizational Title *<input type="text" name="title" required autocomplete="organization-title" title="Your organizational title" pattern="^[A-Za-z\- ]{7,}$"></label>
+                <!--- the "pattern" above allows only letters, hyphens, spaces and a maximum of 12 characters. --->
+                <label>Email *<input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email" autocomplete="email"></label>
+                <label>Cell Phone *<input type="tel" name="phone" autocomplete="phone" required title="Phone Number" placeholder="888-888-888"></label>
+                <label>Business/Organization Name *<input type="text" name="business" required autocomplete="organization" title="Your business"></label>
+    
+                <fieldset>
+                    <legend>Membership Level *</legend>
+                    <label><input type="radio" name="membership" value="NP" required> NP Membership (non-profit)</label>
+                    <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+                </fieldset>
+    
+                <label>Business/Organization description<textarea name="description" title="Business description"></textarea>
+                </label>
+    
+                <input type="hidden" name="timestamp" id="timestamp">
+    
+                <input type="submit" value="Apply for Membership">
+            </form>
+        </div>
+        
+        <section id="level-cards" class="level-cards">
+            <h2>Membership Levels</h2>
+        </section>
+        </div>
+        <!-- modal html for the above created membership level-cards -->
+        <dialog id="dialog-box">
+            <h2>Sample Title</h2>
+            <div>
+                <p id="my-cost">Yearly Cost</p>
+                <p id="my-benefits">Benefits: </p>
+                <ul></ul>
+            </div>
+            <button>Close</button>
+        </dialog>
+        </main>
+    </div>
+    
+
+    <footer>
+        <div>
+            <h3>Guayaquil Chamber of Commerce</h3>
+            <p>Av. Cisne 2, Guayaquil</p>
+            <p>+593 991650311</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/braulio.villa.589" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="Github" width="16"
+                    height="16"></a>
+            <a href="www.linkedin.com/in/braulio-villa" target="_blank"><img src="images/linkedin.svg" alt="Linkedin"
+                    width="16" height="16"></a>
+            <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16"
+                    height="16"></a>
+        </div>
+        <div>
+            <p class="p1">©<span id="currentyear"></span>. Braulio Villa</p>
+            <p> Guayaquil - Ecuador</p>
+            <p class="p2">Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
