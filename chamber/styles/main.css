@@ -392,20 +392,20 @@ footer p {
 
 form {
     background-color: var(--light-gray);
-    padding: 10px;
     border-radius: 25px;
 }
 
-form h1 {
+form h2 {
     font-size: 2rem;
-    color: var(--primary-color);
-    margin: 0.5rem 0 .2rem 0;
-    border-bottom: 1px solid #eee;
+    margin-bottom: 0.5rem;
+    border-radius: 15px;
+    
 }
 
 label {
     display: block;
     padding-top: 0.1rem;
+    margin-left: 1rem;
 }
 
 input[type=text],
@@ -469,6 +469,7 @@ form fieldset {
 form legend {
     font-size: 1rem;
     padding-bottom: 0.2rem;
+    margin-left: 1rem;
 }
 
 
