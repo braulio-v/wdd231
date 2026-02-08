@@ -379,9 +379,6 @@ footer p {
     color: black;
     padding: 5px;
     text-align: center;
-    margin-top: 1rem;
-    max-width: 500px;
-    margin-left: 18rem;
     border-bottom: 2px solid var(--primary-color);
 }
 
@@ -541,7 +538,6 @@ form legend {
 #dialog-box {
     border-radius: 15px;
     box-shadow: 0 0 20px rgb(0 0 0 / 60%);
-    display: grid;
 }
 
 #dialog-box.np::backdrop {

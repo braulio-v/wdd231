@@ -1,5 +1,4 @@
 import { membershipLevels } from "../data/memberships.js";
-console.log(membershipLevels);
 
 
 displayMembershipLevels(membershipLevels);
@@ -11,7 +10,7 @@ function displayMembershipLevels(levels) {
     levels.forEach((level) => {
         let card = document.createElement('section');
         let title = document.createElement('h3');
-        let button = document.createElement('button');
+        let benefitButton = document.createElement('button');
         card.setAttribute('class', 'mCard');
         if (level.memberLevel === "np") {
             card.setAttribute('id', 'np')
@@ -26,10 +25,10 @@ function displayMembershipLevels(levels) {
             card.setAttribute('id', 'gold')
         }
         title.innerHTML = `${level.title}`;
-        button.innerHTML = 'Learn More';
-        button.addEventListener('click', () => showStuff(level));
+        benefitButton.innerHTML = 'Learn More';
+        benefitButton.addEventListener('click', () => showStuff(level));
         card.appendChild(title);
-        card.appendChild(button);
+        card.appendChild(benefitButton);
         levelsSection.appendChild(card);
 
     });
@@ -42,7 +41,7 @@ const myTitle = document.querySelector('#dialog-box H2');
 const myCost = document.querySelector('#my-cost');
 const myBenefits = document.querySelector('#my-benefits');
 const myBenefitsList = document.querySelector('#dialog-box ul');
-const closeButton = document.querySelector('#dialog-box button');
+const closeButton = document.querySelector('#cbutton');
 closeButton.addEventListener('click', () => dialogBox.close());
 
 function showStuff(x) {
@@ -57,4 +56,5 @@ function showStuff(x) {
     });
     myBenefitsList.innerHTML = benefitList;
     dialogBox.showModal();
+    
 }

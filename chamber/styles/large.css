@@ -27,6 +27,11 @@
     }
 
     /* join*/
+    .h1join {
+            margin-top: 1rem;
+            max-width: 500px;
+            margin-left: 18rem;
+    }
     .form-cards-div {
         grid-template-columns: 1fr 1fr;
     }

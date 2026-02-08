@@ -4,6 +4,8 @@ document.getElementById('currentyear').textContent = currentYear;
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = lastModified;
 
+
+
 const getString = window.location.search;
 console.log(getString);
 
