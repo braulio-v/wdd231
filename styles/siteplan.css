@@ -36,10 +36,6 @@ section {
     border-radius: 5px;
 }
 
-section img{
-    text-align: center;
-}
-
 h1 {
     color: var(--onyx);
 }
@@ -53,6 +49,18 @@ h3 {
     font-weight: bold;
 }
 
+.wireframes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.larger{
+    width: 500px;
+}
+
+.small {
+    width: 300px;
+}
 
 footer {
     background-color: var(--dodger-blue);
