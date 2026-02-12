@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory-Chamber of Commerce</title>
-    <meta name="description"
-        content="The Guayaquil Chamber of Commerce promotes local businesses through networking, advocacy, events, and resources that support economic growth.">
-    <meta name="author" content="Braulio Villa">
+    <title>Document</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/discover.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -18,8 +17,7 @@
     <meta property="og:title" content="Guayaquil Chamber of Commerce">
     <meta property="og:description"
         content="The Guayaquil Chamber of Commerce promotes local businesses, economic growth, and community development through resources, events, and partnerships.">
-    <meta property="og:image"
-        content="https://braulio-v.github.io/wdd231/chamber/images/guayaquil.jpg">
+    <meta property="og:image" content="https://braulio-v.github.io/wdd231/chamber/images/guayaquil.jpg">
     <meta property="og:url" content="https://braulio-v.github.io/wdd231">
 </head>
 <body>
@@ -31,29 +29,12 @@
     <nav>
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html" class="activeDirectory">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="discover.html" class="activeDiscover">Discover</a></li>
         </ul>
     </nav>
-    <!-- Hero Section -->
-    <main class="hero">
-        <div class="hero-container">
-            <h1 class="">Welcome to Guayaquil</h1>
-            <p>
-                Supporting local businesses and strengthening the economic future
-                of Ecuador’s commercial capital.
-            </p>
-            <img src="images/guayaquil.jpg" alt="">
-            <a href="join.html" class="btn">Join The Chamber</a>
-        </div>
-    </main>
-    <div class="menu">
-        <h2 class="pd">Business Directory</h2>
-        <button id="grid" class="list">▦</button>
-        <button id="list">⇶</button>
-    </div>
-    <div id="members-container" class="list"></div>
+
     <footer>
         <div>
             <h3>Guayaquil Chamber of Commerce</h3>
@@ -75,6 +56,6 @@
             <p> Guayaquil - Ecuador</p>
             <p class="p2">Last Modified: <span id="lastModified"></span></p>
         </div>
-    </footer>  
+    </footer>
 </body>
 </html>
