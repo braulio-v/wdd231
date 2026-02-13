@@ -633,6 +633,11 @@ form legend {
     grid-area: photograph;
 }
 
+.places div img:hover {
+    mix-blend-mode: difference;
+    border-radius: 15px 150px;
+}
+
 .places div p{
     margin: 1rem 10px;
     grid-area: description;
@@ -665,7 +670,7 @@ form legend {
 .tittledis {
     color: black;
     background-color: white;
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
     margin-left: 80px;
     font-weight: bolder;
