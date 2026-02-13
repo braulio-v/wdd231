@@ -33,10 +33,6 @@
         column-gap: 5px;
     }
     
-    .grid-layout section {
-        width: none;
-    }
-    
     .business {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
