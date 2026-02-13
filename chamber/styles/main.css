@@ -107,7 +107,7 @@ nav {
 
 .hero {
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .hero-container {
@@ -603,4 +603,76 @@ form legend {
 .activeDiscover {
     font-weight: bold;
     border-bottom: 3px solid #ddd;
+}
+
+.places div{
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location";
+}
+
+.places div h3 {
+    margin: 1rem 10px;
+    grid-area: name;
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+.places div img {
+    width: 100%;
+    width: 300px;
+    height: 200px;
+    grid-area: photograph;
+}
+
+.places div p{
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+.places div address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+.discoverdiv {
+    max-width: 1100px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    background-color: var(--secondary-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discoverdiv img {
+    width: 50vw;
+    max-height: 50vh;
+    padding: 10px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.tittledis {
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 80px;
+    font-weight: bolder;
+}
+
+.lastvisit {
+    color: var(--primary-color);
+    font-size: 20px;
+    text-align: center;
 }

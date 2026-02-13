@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
     .hamburger {
         display: none;
     }
@@ -62,10 +62,15 @@
         margin-right: 2rem;
         margin-bottom: 1rem;
     }
+    /* discover */
+    .places {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
 
 }
 
-@media only screen and (max-width: 38rem) {
+@media only screen and (max-width: 64rem) {
     footer{
             display: grid;
         }
