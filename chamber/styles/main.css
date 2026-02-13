@@ -467,9 +467,7 @@ form legend {
 }
 
 
-.level-cards {
-    animation: fadeIn 1.5s ease-in;
-}
+
 
 @keyframes fadeIn {
     from {
@@ -523,6 +521,7 @@ form legend {
 
 .level-cards {
     margin-right: 5rem;
+    animation: fadeIn 1.5s ease-in;
 }
 
 .mCard {
@@ -628,7 +627,7 @@ form legend {
 
 .places div img {
     width: 100%;
-    width: 300px;
+    max-width: 300px;
     height: 200px;
     grid-area: photograph;
 }
