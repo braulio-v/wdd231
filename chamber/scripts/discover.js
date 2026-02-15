@@ -4,14 +4,6 @@ document.getElementById('currentyear').textContent = currentYear;
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = lastModified;
 
-const navButton = document.querySelector('#nav-button');
-const mainnav = document.querySelector('.navigation');
-
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    mainnav.classList.toggle('show');
-});
-
 let lastDate = null;
 const currentVisit = Date.now();
 // const dateFromString = new Date("2025-03-25");
