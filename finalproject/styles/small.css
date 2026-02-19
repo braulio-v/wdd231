@@ -121,6 +121,7 @@ main h1 {
     text-align: center;
     font-family: roboto;
     padding: 15px;
+    font-size: 18px;
 }
 
 .homeSection {
@@ -144,7 +145,7 @@ main h1 {
 
 .levels {
     display: grid;
-    grid-template-columns: 24% auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: auto auto auto auto;
     grid-gap: 1rem;
     margin: 0 50px;
@@ -152,8 +153,9 @@ main h1 {
 .levels h2 {
     border-bottom: 2px solid var(--bodytext);
     text-align: center;
-    margin: 20px 31%;
-    grid-column: 1/5;
+    font-size: 17px;
+    margin: 20px 18%;
+    grid-column: 1/4; 
 }
 
 .levels button {
@@ -161,21 +163,26 @@ main h1 {
     border-radius: 15px;
 }
 
+#b1 {
+    grid-column: 1/4;
+    margin: 0 34%;
+}
+
 .levels p {
     text-align: center;
-    grid-column: 1/5;
+    grid-column: 1/4;
     background-color: var(--foremphasis);
     padding: 5px;
     border-radius: 15px;
-    margin: 0 45%;
+    margin: 0 36%;
     color: var(--bodytext);
     border: 1px solid var(--secondary-color);
 }
 
 .topics{
-    grid-column: 1/5;
+    grid-column: 1/4;
     display: grid;
-    grid-template-columns: 23% auto auto auto ;
+    grid-template-columns: 50% auto ;
 }
 
 .topic-card {

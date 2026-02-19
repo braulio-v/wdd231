@@ -1,4 +1,4 @@
-@media only screen and (min-width: 50rem) {   /* 64rem */
+@media only screen and (min-width: 60rem) {   /* 64rem */
     .hamburger {
             display: none;
         }
@@ -17,6 +17,10 @@
             padding-left: 0;
         }
 
+        main h1 {
+            font-size: 25px;
+        }
+
         .startlearning {
             display: block;
         }
@@ -28,5 +32,37 @@
             margin-left: 110px;
             margin-right: 50px;
             font-family: roboto;
+        }
+
+        .levels {
+            display: grid;
+            grid-template-columns: 24% auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            grid-gap: 1rem;
+            margin: 0 50px;
+        }
+
+        .topics {
+            grid-column: 1/5;
+            display: grid;
+            grid-template-columns: 23% auto auto auto;
+        }
+
+        .levels h2 {
+            border-bottom: 2px solid var(--bodytext);
+            text-align: center;
+            margin: 20px 31%;
+            grid-column: 1/5;
+            font-size: 23px;
+        }
+
+        .levels p {
+            text-align: center;
+            grid-column: 1/5;
+            margin: 0 45%;
+        }
+        #b1 {
+            grid-column: 4/5;
+            margin: 0 ;
         }
 }
