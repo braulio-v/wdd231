@@ -40,7 +40,7 @@ header span {
     margin-left: 25px;
 }
 
-.activeHome {
+.activeHome,.activeResources {
     font-weight: bold;
     border-bottom: 3px solid var(--secondary-color);
 }
@@ -219,4 +219,71 @@ footer {
 .social img {
     width: 26px;
     height: 26px;
+}
+
+
+/* Materials Page */
+
+.container {
+    max-width: 1050px;
+    margin: 1px auto;
+    padding: 5px;
+}
+
+.level {
+    margin-bottom: 50px;
+}
+
+.level h2 {
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.topic {
+    background: var(--background);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--foremphasis);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.topic h3 {
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.topic-content {
+    display: none;
+    margin-top: 15px;
+}
+
+/*from js */ 
+.print {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.exercise {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
 }
