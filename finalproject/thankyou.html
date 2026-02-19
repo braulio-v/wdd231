@@ -3,47 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Information</title>
     <meta name="description"
-        content="The Guayaquil Chamber of Commerce promotes local businesses through networking, advocacy, events, and resources that support economic growth.">
+        content="Learn English online with interactive lessons and level-based topics from beginner to advanced. Practice speaking, reading, and writing easily.">
     <meta name="author" content="Braulio Villa">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/join.js" defer></script>
+    <link rel="stylesheet" href="">
+    <script src="scripts/contact.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <meta property="og:title" content="Guayaquil Chamber of Commerce">
+    <meta property="og:title" content="English Learning Hub">
     <meta property="og:description"
-        content="The Guayaquil Chamber of Commerce promotes local businesses, economic growth, and community development through resources, events, and partnerships.">
-    <meta property="og:image" content="https://braulio-v.github.io/wdd231/chamber/images/guayaquil.jpg">
-    <meta property="og:url" content="https://braulio-v.github.io/wdd231/chamber/index.html">
+        content="Learn English with interactive lessons and level-based topics from beginner to advanced. Improve your speaking and communication skills.">
+    <meta property="og:image" content="https://braulio-v.github.io/wdd231/finalproject/images/english.jpg">
+    <meta property="og:url" content="https://braulio-v.github.io/wdd231/finalproject/index.html">
 </head>
 <body>
     <header>
-        <img src="images/buildings.svg" alt="Site Logo" width="512" height="512">
-        <span>Guayaquil Chamber of commerce</span>
+        <img src="images/siteLogo.svg" alt="Site Logo">
+        <span>English Learning</span>
         <button id="nav-button" class="hamburger"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a class="startlearning" href="materials.html">Start Learning</a>
     </header>
-    <nav>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
-        </ul>
-    </nav>
     <main>
         <fieldset class="thanks">
             <legend>Thank you for joining us</legend>
-            <h1>Below are your membership details</h1>
+            <h1>Below are your details</h1>
             <div id="results"></div>
             <h3>Thank you for joining</h3>
             <p id="join-timestamp"></p>
         </fieldset>
     </main>
+
     <footer>
         <div>
             <h3>Guayaquil Chamber of Commerce</h3>

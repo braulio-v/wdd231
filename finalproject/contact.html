@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us-English Learning</title>
+    <meta name="description"
+        content="Learn English online with interactive lessons and level-based topics from beginner to advanced. Practice speaking, reading, and writing easily.">
+    <meta name="author" content="Braulio Villa">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="">
+    <script src="scripts/contact.js" defer></script>
+    <script type="module" src="scripts/plan.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="English Learning Hub">
+    <meta property="og:description"
+        content="Learn English with interactive lessons and level-based topics from beginner to advanced. Improve your speaking and communication skills.">
+    <meta property="og:image" content="https://braulio-v.github.io/wdd231/finalproject/images/english.jpg">
+    <meta property="og:url" content="https://braulio-v.github.io/wdd231/finalproject/index.html">
+</head>
+<body>
+    <header>
+        <img src="images/siteLogo.svg" alt="Site Logo">
+        <span>English Learning</span>
+        <button id="nav-button" class="hamburger"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="contact.html" class="activeContact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a class="startlearning" href="materials.html">Start Learning</a>
+    </header> 
+    <main>
+        <h1 class="h1join">Join Our English Learning Community</h1>
+        
+        <div class="form-cards-div">
+            <div class="form-div">
+                <form method="GET" action="thankyou.html" class="designOne">
+                    <h2>Start Your English Journey</h2>
+        
+                    <label>First Name *
+                        <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                    </label>
+        
+                    <label>Last Name *
+                        <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                    </label>
+        
+                    <label>Email *
+                        <input type="email" name="email" required placeholder="example@gmail.com" autocomplete="email">
+                    </label>
+        
+                    <label>Phone Number
+                        <input type="tel" name="phone" autocomplete="tel" placeholder="888-888-888">
+                    </label>
+        
+                    <label>Current English Level *
+                        <select name="level" required>
+                            <option value="">Select your level</option>
+                            <option value="A1">A1 - Beginner</option>
+                            <option value="A2">A2 - Elementary</option>
+                            <option value="B1">B1 - Intermediate</option>
+                        </select>
+                    </label>
+        
+                    <fieldset>
+                        <legend>Choose Your Membership *</legend>
+        
+                        <label>
+                            <input type="radio" name="membership" value="Free" required>
+                            Free Member (Access to basic materials & newsletter)
+                        </label>
+        
+                        <label>
+                            <input type="radio" name="membership" value="Silver">
+                            Silver Member (Extra exercises & downloadable PDFs)
+                        </label>
+        
+                        <label>
+                            <input type="radio" name="membership" value="Gold">
+                            Gold Member (All materials + future live sessions)
+                        </label>
+                    </fieldset>
+        
+                    <label>
+                        <input type="checkbox" name="updates" required>
+                        I agree to receive English learning tips and updates by email.
+                    </label>
+        
+                    <input type="hidden" name="timestamp" id="timestamp">
+        
+                    <input type="submit" value="Join Now">
+                </form>
+            </div>
+            <section id="level-cards" class="level-cards">
+                <h2>Membership Levels</h2>
+            </section>
+        </div>
+    </main>
+    <dialog id="dialog-box">
+        <h2></h2>
+        <p id="my-cost"></p>
+        <p>Benefits:</p>
+        <ul></ul>
+        <button id="cbutton">Close</button>
+    </dialog>
+
+
+    <footer>
+        <div>
+            <h3>Guayaquil Chamber of Commerce</h3>
+            <p>Av. Cisne 2, Guayaquil</p>
+            <p>+593 991650311</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/braulio.villa.589" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="Github" width="16"
+                    height="16"></a>
+            <a href="www.linkedin.com/in/braulio-villa" target="_blank"><img src="images/linkedin.svg" alt="Linkedin"
+                    width="16" height="16"></a>
+            <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16"
+                    height="16"></a>
+        </div>
+        <div>
+            <p class="p1">©<span id="currentyear"></span>. Braulio Villa</p>
+            <p> Guayaquil - Ecuador</p>
+            <p class="p2">Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

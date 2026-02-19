@@ -16,7 +16,7 @@ navButton.addEventListener('click', () => {
 const getString = window.location.search;
 console.log(getString);
 
-const myInfo = new URLSearchParams(getString);
+const myInfo = new URLSearchParams(getString); 
 console.log(myInfo);
 
 document.querySelector('#results').innerHTML = `
