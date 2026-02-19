@@ -13,7 +13,6 @@
     
         .navigation {
             display: flex;
-            gap: rem;
             padding-left: 0;
         }
 

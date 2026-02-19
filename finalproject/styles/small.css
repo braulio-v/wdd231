@@ -384,11 +384,6 @@ form {
     border: 1px solid var(--foremphasis);
 }
 
-.form-cards-div {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-}
-
 form h2 {
     font-size: 1.6rem;
     font-family: roboto;
