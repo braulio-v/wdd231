@@ -307,6 +307,57 @@ td {
     margin-top: 15px;
 }
 
+.benefits-grid {
+    max-width: 1100px;
+    margin: 2rem auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.benefits-grid div {
+    border: 1px solid var(--bodytext);
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefits-grid div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.benefits-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.benefits-grid h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.benefits-grid p {
+    padding: 0 1rem 1.5rem 1rem;
+    font-size: 0.95rem;
+}
+
+.tittledis {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--bodytext);
+}
+
+.lastvisit {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
 
 /* -- CONTACT PAGE -- */
 
@@ -446,6 +497,7 @@ form legend {
 
 .form-cards-div {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
     max-width: 1150px;
     margin: 0 auto;

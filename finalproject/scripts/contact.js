@@ -1,3 +1,10 @@
+const navButton = document.querySelector('#nav-button');
+const mainnav = document.querySelector('.navigation');
+
+navButton.addEventListener('click', () => {
+  navButton.classList.toggle('show');
+  mainnav.classList.toggle('show');
+});
 const getString = window.location.search;
 console.log(getString);
 
