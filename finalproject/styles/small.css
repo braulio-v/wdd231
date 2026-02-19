@@ -143,6 +143,11 @@ main h1 {
     margin-bottom: 20px;
 }
 
+.introduction {
+    margin: 0 10%;
+    margin-bottom: 15px;
+}
+
 .levels {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
