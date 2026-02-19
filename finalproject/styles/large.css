@@ -1,0 +1,32 @@
+@media only screen and (min-width: 50rem) {   /* 64rem */
+    .hamburger {
+            display: none;
+        }
+    
+        header {
+            grid-template-columns: 45px 33% 47% auto;
+        }
+
+        .navigation li {
+            display: block;
+        }
+    
+        .navigation {
+            display: flex;
+            gap: rem;
+            padding-left: 0;
+        }
+
+        .startlearning {
+            display: block;
+        }
+        .homeSection {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+        }
+        .introduction {
+            margin-left: 110px;
+            margin-right: 50px;
+            font-family: roboto;
+        }
+}

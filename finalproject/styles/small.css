@@ -1,0 +1,222 @@
+:root {
+    --primary-color: #2191FB;
+    /* Azul oscuro */
+    --secondary-color: #27187E;
+    /* Celeste */
+    --background: #FEEFDD;
+    /* Gris medio */
+    --foremphasis: #FF6700;
+    /* Fondo */
+    --bodytext: #03120E;
+    /* Texto */
+}
+* {
+    margin: 0;
+}
+
+/* header */
+header {
+    display: grid;
+    grid-template-columns: 45px auto 48px; 
+    padding: 10px 0 10px 25px;
+    border-bottom: solid 1px var(--bodytext);
+    column-gap: 8px;
+    align-items: end;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--primary-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+header span {
+    font-size: 1.4rem;
+    color: var(--bodytext);
+    padding-bottom: 8px;
+    margin-left: 25px;
+}
+
+.activeHome {
+    font-weight: bold;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+/* hamburger  */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--bodytext);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* navigation section */
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    font-family: "Roboto", sans-serif;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 45px;
+    outline: 1px solid var(--secondary-color);
+}
+
+.startlearning {
+    width: 120px;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 7px;
+    height: 25px;
+    border-radius: 10px;
+    display: none;
+    margin-left: 20px;
+    text-decoration: none;
+    background-color: #ddd;
+    color: var(--bodytext);
+    border: 1px solid var(--bodytext);
+}
+
+.show li {
+    display: block;
+}
+
+main h1 {
+    text-align: center;
+    font-family: roboto;
+    padding: 15px;
+}
+
+.homeSection {
+    background-color: var(--background);
+    padding-top: 30px;
+    border-top: 1px solid var(--bodytext);
+    border-bottom: 1px solid var(--bodytext);
+}
+
+.homeSection div img {
+    width: 50%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+}
+
+.introduction h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.levels {
+    display: grid;
+    grid-template-columns: 24% auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1rem;
+    margin: 0 50px;
+}
+.levels h2 {
+    border-bottom: 2px solid var(--bodytext);
+    text-align: center;
+    margin: 20px 31%;
+    grid-column: 1/5;
+}
+
+.levels button {
+    height: 29px;
+    border-radius: 15px;
+}
+
+.levels p {
+    text-align: center;
+    grid-column: 1/5;
+    background-color: var(--foremphasis);
+    padding: 5px;
+    border-radius: 15px;
+    margin: 0 45%;
+    color: var(--bodytext);
+    border: 1px solid var(--secondary-color);
+}
+
+.topics{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: 23% auto auto auto ;
+}
+
+.topic-card {
+    padding: 1rem;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background: var(--primary-color);
+    border-left: 5px solid var(--secondary-color);
+}
+
+
+footer {
+    margin-top: 20px;
+    padding: 0.5rem 10px;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--bodytext);
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 3px;
+}
+
+.social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1.2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 26px;
+    height: 26px;
+}

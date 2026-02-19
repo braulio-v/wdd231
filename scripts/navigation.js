@@ -80,7 +80,7 @@ const courses = [
         technology: [
             'HTML',
             'CSS',
-            'JavaScript'
+            'JavaScript' 
         ],
         completed: false
     }
