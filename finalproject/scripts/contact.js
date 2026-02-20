@@ -26,4 +26,9 @@ const date = new Date(Number(timestamp));
 document.querySelector('#join-timestamp').innerHTML = `<br>
   Timestamp: ${date}`;
 
+const currentYear = new Date().getFullYear();
+document.getElementById('currentyear').textContent = currentYear;
+
+const lastModified = document.lastModified;
+document.getElementById('lastModified').textContent = lastModified;
 
